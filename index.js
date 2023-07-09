@@ -18,8 +18,8 @@ mongoose.connect(process.env.DATABASE)
     console.log("No Connection")
     console.log(err);
 })
-const UsersModel=require("../server/models/users");
-const allPostsModel=require("../server/models/allPosts");
+const UsersModel=require("./models/users");
+const allPostsModel=require("./models/allPosts");
 // const lcsModel=require("../server/models/lcsModel");
 // console.log(lcsModel)
 app.post('/signup',async (req,res)=>{
